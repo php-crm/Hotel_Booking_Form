@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Booking Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <center><h2>Hotel Booking Form</h2></center>
+      <form action="submit_phpcrm_form.php" method="POST">
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="fname" required  name="name" placeholder="Name">  
+          </div>
+         </div>
+              <div class="row">
+            <div class="col-50">
+                <input type="email" name="email" required placeholder="Email">
+            </div>
+            <div class="col-50">
+               <input type="number" name="phone" required placeholder="Phone">
+           </div>
+        </div>
+            <div class="row">
+              <div class="col-50">
+                <input type="text" id="address" name="address" placeholder="Address">
+              </div>     
+         </div>
+         <div class="row">
+             <div class="col-50">
+                 <input type="text" name="city" required placeholder="City">
+             </div>
+             <div class="col-50">
+                <input type="text" name="state" required placeholder="State">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-50">
+                <input type="number" name="zip_code" required placeholder="Zip Code">
+            </div>
+            <div class="col-50">
+               <input type="text" name="country" required placeholder="Country">
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-50">
+                <label>Check In</label>
+                <input type="date" name="check_in_date" required >
+            </div>
+            <div class="col-50">
+                <label>Check Out</label>
+               <input type="date" name="check_out_date" required >
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-50">
+              <input type="number" name="no_of_person" placeholder="No Of Person" required >
+          </div>
+          <div class="col-50">
+            <select name="no_of_male" >
+              <option value="null">Male</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+      </div>
+       <div class="row">
+        <div class="col-50">
+            <select name="no_of_female" >
+              <option value="null">Female</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+        </div>
+        <div class="col-50">
+          <select name="no_of_kids" >
+            <option value="null">Kids</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+      </div>
+      </div>
+        <input type="submit" value="Book Now" class="btn">
+       </div>
+       </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
